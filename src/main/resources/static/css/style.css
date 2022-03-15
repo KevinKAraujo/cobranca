@@ -1,0 +1,375 @@
+@charset "UFT8";
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: white;
+}
+
+/*MENU*/
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: white;
+    width: 100%;
+    box-shadow: 1px 3px 8px -4px  rgba(0, 0, 0, 0.349);
+    margin-bottom: 3px;
+}
+
+#menu{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style: none;
+    display: flex;
+}
+
+#menu ul{
+    padding-right: 150px;
+    padding-top: 11px;
+    list-style: none;
+}
+
+#menu li a{
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    padding: 30px 20px 30px 10px;
+    color: black;
+    
+}
+
+#menu li a:hover{
+    background-color: rgb(250, 186, 196);
+    transition-duration: 0.6s;
+    border-radius: 6px;
+}
+
+#logo{
+    margin-left: 5px;
+    padding: 5px 50px 5px 15px ;
+    height: 90px;
+    width: auto;
+}
+
+/*CABEÇALHO*/
+
+header{
+    background-image: linear-gradient(#eeadad,#f59797,#f57070);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.247);
+    margin-top: 3px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+h1#tituloprincipal{
+    font-size: 40px;
+    color: white;
+    padding: 90px 10px 10px 0px;
+}
+
+p#paragrafoprincipal{
+    font-size: 20px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/*CONTEUDO PRINCIPAL(MAIN)*/
+
+main{
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin:auto;
+    margin-top: 3px;
+    padding: 10px 0px 0px 10px;
+    line-height: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-justify: justify;
+    
+
+}
+
+#boasvindas{
+    padding: 10px 0px 0px 0px;
+}
+
+#bemvindo{
+    font-size: 18px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+#titulo2{
+    padding-left: 15px;
+    font-size: 1.8em;
+}
+
+
+.titulos{
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
+.paragrafo{
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    min-width: 300px;
+    max-width: 1000px;
+}
+
+.linha{
+    width: 40%;
+    border-color: rgb(253, 104, 129);
+    margin-left: 15px;
+}
+
+/*CURIOSIDADES*/
+
+#section2{
+    background-color: rgba(211, 211, 211, 0.315);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.24);
+    margin-top: 2px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content:space-around ;
+    flex-wrap: wrap;
+}
+
+#titulo3{
+    text-align: center;
+    padding: 30px;
+    font-size: 35px;
+    background-color: rgb(211, 211, 211, 0.315);
+}
+
+hr{
+    border-color: rgb(253, 104, 129);
+    margin-left: 15px;
+    margin-bottom: 30px;
+    max-width: 70%;
+    margin: auto;
+}
+
+
+img{
+    margin: auto;
+    max-width: 100%;  
+    padding-top: 30px;
+    padding-bottom: 80px;
+    
+}
+
+
+.txtcoberto{
+    background-color: rgba(10, 10, 10, 0.205);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    width: 288px;
+    height: 273px;
+    position: relative;
+    margin-top: -341px;
+    margin-left: 150px;
+    margin-bottom: 5px;
+    border-radius: 21px;
+    border: solid rgba(0, 0, 0, 0.589);
+    padding: 67px 30px 0px 30px;
+}
+
+.txtcoberto a{
+    text-decoration: none;
+    color: white;
+}
+
+.txtcoberto:hover{
+    background-color: rgba(253, 104, 129);
+    transition-duration: 0.7s;
+    text-decoration: underline;
+}
+
+/*SECTION 3 - CONTAto*/
+
+#section03{
+    background-image: url("../images/fundo.png");
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 40px;
+    max-width: 1000%;
+    margin-top: 3px;
+    padding-top: 15px;
+
+}
+
+.contato{
+    padding-bottom: 20px;
+    padding-right: 40px;
+
+}
+
+/*FORMULARIO*/
+
+
+h2#form{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    padding: 20px 0px 10px 25px;
+}
+
+#linhaform{
+    border-color: rgb(253, 104, 129);
+    width: 25%;
+    border-color: rgb(253, 104, 129);
+    margin-left: 25px;
+}
+
+fieldset{
+    margin-top: -15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(211, 211, 211, 0.315);
+    border: none;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.24);
+   
+
+}
+
+.caixas{
+    margin: auto;
+    width: 100%;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-right: 0%;
+    
+}
+
+input#nome, input#sobrenome, input#email{
+    height: 25px;
+    width: 350px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.212);
+    margin: auto;
+}
+textarea{
+    margin: auto;
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.212);
+}
+
+input#nome:focus, input#sobrenome:focus, input#email:focus, textarea:focus{
+    background-color: #fff1f1;
+
+}
+
+#botao:hover{
+    background-color: rgba(253, 104, 129)
+
+}
+
+
+/*RODAPE*/
+
+footer{
+    background-image: linear-gradient(#f57070,#f37272,#fd8989);
+    margin-top: 1px;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    font-size: 19px;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.473);
+}
+
+#botao{
+    padding: 10px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    background-color: pink;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.212);
+    border: none;
+}
+
+#facebook{
+    background-color: rgb(253, 229, 233);
+    margin-left: -20px;
+    padding: 15px 30px 15px 30px;
+    border: 1px solid black;
+    list-style: none;
+    text-decoration: none;
+}
+
+#facebook:hover{
+    background-color: rgb(255, 137, 156);
+
+}
+
+#instagran{
+    background-color: rgb(253, 229, 233);
+    padding: 15px 30px 15px 30px;
+    border: 1px solid black;
+}
+
+#instagran:hover{
+    background-color: rgb(255, 137, 156);
+
+}
+
+.alert{
+	margin-left: 25px;
+}
+
+
+
+/*Link dos Feedback*/
+
+#link{
+	margin: 20px;
+	text-decoration: none;
+	color:black;
+	background-color: lightpink;
+	border-radius: 8px;
+	padding: 10px;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.212);
+}
+
+#link:hover{
+	color: rgb(255, 137, 156);
+	
+}
+
+#linkfeed{
+	margin-top: 40px;
+	text-decoration: none;
+	color:black;
+	background-color: lightpink;
+	border-radius: 8px;
+	padding: 10px;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.212);
+}
+
+#linkfeed:hover{
+	color: rgb(255, 137, 156);
+
+
+}
+
+
+
+
+
+

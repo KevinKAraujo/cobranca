@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type ="text/css"href="/css/style.css">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>FeedBack</title>
+</head>
+
+<style>
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    table{
+        width: 500px;
+        border-collapse: collapse;
+        position: relative;
+    }
+    
+    td , th{
+        border: 1px solid black;
+        padding: 10px;
+    }
+    
+    thead, tfoot{
+        background-color: gray;
+        color: white;
+    }
+    
+    tbody tr:nth-child(2n){ /*Efeito sezrado*/
+        background-color: lightgray;
+    }
+    
+    thead > tr > th{ /*Deixar o Header da tabela colado*/
+        position: sticky;
+        top: -1px;
+        background-color: rgb(143, 143, 143);
+    }
+    
+    .num{
+        text-align: right;
+    }
+    
+    </style>
+
+
+
+<body>
+
+    <nav id="menu">
+        <div>
+            <img src="/images/logo.png" alt="logo" id="logo">
+        </div>
+
+        <div>
+            <ul id="menu">
+                <li><a href="http://">Home</a></li>
+                <li><a href="http://">Empresa</a></li>
+                <li><a href="http://">Contato</a></li>
+                <li><a href="http://">Curiosidade</a></li>
+            </ul>
+        </div>
+        
+    </nav>
+
+</body>
+
+ <a href="/titulos/novo" id="linkfeed" > Novo FeebBack </a>
+
+<table>
+    <thead>
+        <tr>
+            <th escope = "col">#</th>
+            <th escope = "col" style="width: 100px;">Feedback</th>
+            <th escope = "col"> Data</th>
+            <th escope = "col"> E-mail</th>
+        </tr>
+
+    </thead>
+    
+    <tbody>
+    	 <tr>
+    	 	<td colspan = "6"> Nenhum Titulo encontrado</td>
+         </tr>
+    </tbody>
+    
+
+
+    
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    
+</body>
+
+
+
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type ="text/css"href="/css/style.css">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+    <title>Projeto site</title>
+</head>
+
+<body>
+
+
+    <nav id="menu">
+    
+        <div>
+            <img src="/images/logo.png" alt="logo" id="logo">
+        </div>
+
+        <div>
+            <ul id="menu">
+                <li><a href="http://">Home</a></li>
+                <li><a href="http://">Empresa</a></li>
+                <li><a href="http://">Contato</a></li>
+                <li><a href="http://">Curiosidade</a></li>
+            </ul>
+        </div>
+        
+    </nav>
+
+    <header>
+        
+        <div>
+            <h1 id="tituloprincipal"><strong>Bem-vindo ao Estudio Unhas seu site de unhas </strong></h1>
+            <p id="paragrafoprincipal">Aqui você encontra as melhores curiosidades para cuidar da sua unha</p>
+        </div>
+
+
+    </header>
+
+    <main>
+
+        <section id="boasvindas">
+
+            <div>
+                <p id="bemvindo">BEM VINDO AO</p>
+                <h1 id="titulo2">Estudio Unhas</h1>
+                <p class="paragrafo"> Aqui você vai conhecer um pouco da meu trabalho realizado nas clientes, e também dicas que talvez você não conheça sobre como cuidar de suas unhas e deixa-las bem saudáveis.</p>
+
+                <h2 class="titulos">Missão</h2>
+                <hr class="linha">
+                <p class="paragrafo">Minha missão é Levar o máximo de conhecimento da area de manicure para minhas clientes e mostrar como é importante cuidar da saúde de nossas unhas.</p>
+
+                <h2 class="titulos">Valores</h2>
+                <hr class="linha">
+                <p class="paragrafo"> Mostrar que manicure também pode ser um trabalho duro e recompensador.</p>
+
+        
+                <h2 class="titulos">Visão</h2>
+                <hr class="linha">
+                <p class="paragrafo">Quero fazer meu negócio crescer e ser conhecida nacionalmente e me prossionalizar cada vez mais.</p>
+            </div> 
+        </section> 
+            
+    </main>
+
+
+        <h1 id="titulo3">Curiosidades</h1>
+        <hr>
+
+        <section id="section2">
+            
+
+            <div>
+                <img src="/images/foto01.png" alt="" id="imgesquerda">
+
+                <div class="txtcoberto">
+                    <a href="curiosidades.html">
+                        <p class="paragrafos">VOCÊ SABIA QUE MULHERES COM UNHAS FEITAS TEM MAIS CONFIANÇA.</p>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <img src="/images/foto02.png" alt="">
+                <div class="txtcoberto">
+                    <a href="curiosidades.html">
+                        <p class="paragrafos">VOCÊ SABIA QUE A COR DO SEU ESMALTE DIZ SOBRE SUA PERSONALIDADE.</p>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <img src="/images/foto03.png" alt="" id="imgdireita">
+                <div class="txtcoberto">
+                    <a href="curiosidades.html">
+                        <p>MANICURE TAMBÉM É UMA PROFISSÃO DE MUITO VALOR PROFISSIONAL.</p>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+
+        <form method="POST" action="/titulos">
+        
+
+                <fieldset>
+                
+                	<div class = "alert alert-success" th:if"${!#strings.isEmpty(mensagem)}">
+                		<span th:text = "${mensagem}"> Enviado com sucesso</span >
+                	
+                	</div >
+                	
+
+                    <h2 id="form">Envie seu Comentário</h1>
+                    <hr id="linhaform">
+
+                    <div class="caixas">
+                        <label for="nome" class="labels"> <strong>Nome:</strong> </label><br>
+                        <input type="text" name="nome" id="nome" required>
+                    </div>
+
+                     <div class="caixas">
+                        <label for="data" class="labels" ><strong>Data:</strong> </label> <br>
+                        <input type="date" name="data" id="data" >
+                    </div>
+
+                    <div class="caixas">
+                        <label for="email" class="labels"><strong>Email</strong></label><br>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+
+                    <div class="caixas">
+
+                        <label for="feedback" id="labels"><strong>Deixe Seu FeedBack</strong></label><br>                  
+                        <textarea name="feedback" id="feedback" cols="7" rows="10"></textarea>
+                    </div>
+
+                    <input type="submit" value="ENVIAR" id="botao">
+                    
+                    <a href="/titulos" id="link" > Vizualizar Comentários </a>
+                
+
+                </fieldset>
+
+
+        </form >
+
+
+        <section id="section03">
+
+            
+
+            <div class="contato">
+                <h3>📞Atendimento</h3>
+                <p>De segunda à sexta</p>
+                <p>8h às 12h</p>
+                <p>telefone (12)981959317</p>
+                <p>Email: kevinkaraujo@gmail.com</p>
+
+            </div>
+
+            <div class="contato">
+                <h3>📌Endereço</h3>
+                <p>Rua Panorama - N°302</p>
+                <p>Bairro - Jd.Panorama</p>
+            </div>
+
+            <div class="contato">
+                <h3>Redes Sociais</h3>
+                
+
+                <a href="https://www.facebook.com/yara.cristina.7" target="blank" class="fa fa-facebook" id="facebook"></a>
+                
+                <a href=""><i class="fa fa-instagram" id="instagran"></i></a>
+                    
+                </div>
+            
+            </div>
+
+    
+
+
+        </section>
+
+        <footer>
+
+            <p>© Studio Unhas</p>
+
+        </footer>
+        
+        
+    <script src="/js/jquery-3.6.0.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	
+</body>
+</html>
