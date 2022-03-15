@@ -7,6 +7,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 
+
+
+
 @Entity
 public class Titulo {
 	
@@ -16,8 +19,8 @@ public class Titulo {
 	
 	private String nome;
 	
-	private String feedback;
 	
+	private String feedback;
 	
 	
 	private String email;
@@ -63,6 +66,8 @@ public class Titulo {
 		return Objects.hash(codigo);
 	}
 	
+	
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)

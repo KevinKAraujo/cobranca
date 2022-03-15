@@ -79,15 +79,25 @@
         <tr>
             <th escope = "col">#</th>
             <th escope = "col" style="width: 100px;">Feedback</th>
-            <th escope = "col"> Data</th>
             <th escope = "col"> E-mail</th>
         </tr>
 
     </thead>
     
     <tbody>
+    
+    	<tr th:each= "titulo: ${titulos}">
+    	
+    		<td th:text = "${titulo.codigo}"> 1 </td >
+    		<td th:text = "${titulo.feedback}"> </td>
+  			<td th:text = "${titulo.email}">    </td>
+ 
+    		
+    	</tr>	
+    
     	 <tr>
-    	 	<td colspan = "6"> Nenhum Titulo encontrado</td>
+    	 	
+    	 	<td colspan = "6" th:if = "${#lists.isEmpty(titulos)}"> Nenhum Titulo encontrado</td>
          </tr>
     </tbody>
     
